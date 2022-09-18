@@ -1,7 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from './logo.svg'
+import './App.css'
+import axios from 'axios'
+import cookie from 'react-cookies'
 function App() {
+  // let d = new Date()
+  // d.setTime(d.getTime() + 60 * 60 * 1000)
+  // cookie.save('Appname', 'value', { expires: d })
+  // axios.defaults.withCredentials = true
+  axios.post('api/file/get').then((res) => {
+    console.log(res, '???')
+  })
   return (
     <div className="App">
       <header className="App-header">
@@ -13,13 +21,12 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
