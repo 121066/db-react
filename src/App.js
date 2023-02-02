@@ -1,30 +1,23 @@
 import logo from './logo.svg'
 import './App.css'
-import axios from 'axios'
+// import axios from 'axios'
 import cookie from 'react-cookies'
+import Layout from './component/layout/index.js'
+import { BrowserRouter } from 'react-router-dom'
 function App() {
-  // let d = new Date()
-  // d.setTime(d.getTime() + 60 * 60 * 1000)
-  // cookie.save('Appname', 'value', { expires: d })
+  console.log(cookie)
+  let d = new Date()
+  d.setTime(d.getTime() + 60 * 60 * 1000)
+  cookie.save('Appname', 'value', { expires: d })
   // axios.defaults.withCredentials = true
-  axios.post('api/file/get').then((res) => {
-    console.log(res, '???')
-  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <>
+        <BrowserRouter>
+          <Layout />
+        </BrowserRouter>
+      </>
     </div>
   )
 }
