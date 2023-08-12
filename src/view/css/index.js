@@ -1,16 +1,16 @@
-import './index.css'
-import { useParams } from 'react-router-dom'
-
+import { useParams } from "react-router-dom";
+import { useScroll } from "../../hooks/index";
+import "./index.css";
 // 文字渐变
 function TextGradient() {
-  const params = useParams()
-  console.log(params, '???')
+  const params = useParams();
+  // console.log(params, '???')
   return (
     <div className="item">
       <h2>文字渐变</h2>
       <div className="gradient">文字渐变示例</div>
     </div>
-  )
+  );
 }
 // 平滑加载
 function SmoothLoading() {
@@ -19,7 +19,7 @@ function SmoothLoading() {
       <h2>平滑加载</h2>
       <div className="smooth"></div>
     </div>
-  )
+  );
 }
 //异步加载
 function AsyncSmooth() {
@@ -28,7 +28,7 @@ function AsyncSmooth() {
       <h2>异步平滑加载</h2>
       <div className="smooth_s"></div>
     </div>
-  )
+  );
 }
 //边框渐变
 function BorderColor() {
@@ -37,7 +37,7 @@ function BorderColor() {
       <h2>边框渐变</h2>
       <div className="border_color"></div>
     </div>
-  )
+  );
 }
 //三角形
 function Triangle() {
@@ -46,7 +46,7 @@ function Triangle() {
       <h2>三角形</h2>
       <div className="triangle"></div>
     </div>
-  )
+  );
 }
 //单一三角形
 function TriangleS() {
@@ -55,7 +55,7 @@ function TriangleS() {
       <h2>单一三角形</h2>
       <div className="triangle_s"></div>
     </div>
-  )
+  );
 }
 //线性渐变
 function Linear() {
@@ -66,7 +66,7 @@ function Linear() {
       <h2>线性渐变(角度)</h2>
       <div className="linear_s"></div>
     </div>
-  )
+  );
 }
 //滚动条
 function ScrollBar() {
@@ -77,7 +77,7 @@ function ScrollBar() {
         <div className="scroll_bar_item"></div>
       </div>
     </div>
-  )
+  );
 }
 //css节流
 function Throttle() {
@@ -86,7 +86,7 @@ function Throttle() {
       <h2>CSS实现节流</h2>
       <button className="throttle_btn">点击</button>
     </div>
-  )
+  );
 }
 //毛玻璃效果
 function GroundGlass() {
@@ -95,7 +95,7 @@ function GroundGlass() {
       <h2>毛玻璃效果</h2>
       <div className="ground_glass"></div>
     </div>
-  )
+  );
 }
 //卡片翻转
 function CardFlip() {
@@ -107,7 +107,7 @@ function CardFlip() {
         <div className="card_bottpm"></div>
       </div>
     </div>
-  )
+  );
 }
 //聚光灯效果
 function SpotLight() {
@@ -118,7 +118,7 @@ function SpotLight() {
         zaldbyclly
       </div>
     </div>
-  )
+  );
 }
 //圆形光环
 function Halo() {
@@ -132,7 +132,7 @@ function Halo() {
         <span></span>
       </div>
     </div>
-  )
+  );
 }
 //菱形图片
 function DiamondImage() {
@@ -143,26 +143,31 @@ function DiamondImage() {
         <img
           className="diamond_img"
           src="https://dbyxs.xyz:8002/uploads/a96f5d440c47e68c71d0f8283e719a9b"
+          alt="你好"
         />
         <img
           className="diamond_img"
           src="https://dbyxs.xyz:8002/uploads/f168f492b7e97e2062cd6e005e5eae2a"
+          alt="你好"
         />
         <img
           className="diamond_img"
           src="https://dbyxs.xyz:3006/uploads/fae4e814a5d9510d10277ff78ea6dc12"
+          alt="你好"
         />
         <img
           className="diamond_img"
           src="https://dbyxs.xyz:3006/uploads/99336d242db92678679af7b9c92b3bda"
+          alt="你好"
         />
         <img
           className="diamond_img"
           src="https://dbyxs.xyz:3006/uploads/702e37cafbd8c03e72579714bbe5ee6f"
+          alt="你好"
         />
       </div>
     </div>
-  )
+  );
 }
 //文字描边
 function TextStroke() {
@@ -173,7 +178,7 @@ function TextStroke() {
         zaldbyclly
       </div>
     </div>
-  )
+  );
 }
 //磨砂玻璃效果
 function Frosting() {
@@ -184,13 +189,28 @@ function Frosting() {
         <img
           className="frosting_img"
           src="https://img2.baidu.com/it/u=1050489754,1464924425&fm=253&fmt=auto&app=138&f=JPEG?w=1089&h=500"
+          alt="你好"
         />
         <div className="modal"></div>
       </div>
     </div>
-  )
+  );
+}
+//图片倒影 2023-08-12
+function ImageInverted() {
+  let img = require("../../assets/image/006.jpg");
+  return (
+    <div className="item_">
+      <h2>图片倒影</h2>
+      <div className="image_inverted">
+        <img src={img} />
+      </div>
+    </div>
+  );
 }
 function CssList() {
+  const { position } = useScroll();
+  // console.log(position, "??位置");
   return (
     <>
       <div className="css_list">
@@ -210,8 +230,9 @@ function CssList() {
         <DiamondImage></DiamondImage>
         <TextStroke></TextStroke>
         <Frosting></Frosting>
+        <ImageInverted></ImageInverted>
       </div>
     </>
-  )
+  );
 }
-export default CssList
+export default CssList;

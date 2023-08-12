@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/runtime": "^7.21.0",
     "@craco/craco": "^6.4.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
@@ -37,6 +38,7 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^15.1.0",
     "postcss-loader": "^6.2.1",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
@@ -63,6 +65,7 @@
   },
   "scripts": {
     "start": " cross-env NODE_ENV=development   node scripts/start.js ",
+    "start:dev": "node scripts/start.js ",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
@@ -85,11 +88,14 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "latest",
     "axios": "^0.27.2",
     "cross-env": "^7.0.3",
     "http-proxy-middleware": "^2.0.6",
+    "postcss": "latest",
     "react-cookies": "^0.1.1",
-    "react-router-dom": "^6.4.5"
+    "react-router-dom": "^6.4.5",
+    "tailwindcss": "latest"
   },
   "jest": {
     "roots": [
