@@ -1,0 +1,5 @@
+.item_img_filter{
+    width: 100px;
+    height: 100%;
+    filter: drop-shadow(0 0 10px #fff);
+}

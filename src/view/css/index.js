@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useScroll } from "../../hooks/index";
+import Botton from "./component/Button";
+import Image from "./component/Image";
 import "./index.css";
 // 文字渐变
 function TextGradient() {
@@ -231,6 +233,8 @@ function CssList() {
         <TextStroke></TextStroke>
         <Frosting></Frosting>
         <ImageInverted></ImageInverted>
+        <Botton></Botton>
+        <Image></Image>
       </div>
     </>
   );
