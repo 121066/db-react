@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useScroll } from "../../hooks/index";
 import Botton from "./component/Button";
 import Image from "./component/Image";
+import Text from "./component/Text";
 import "./index.css";
 // 文字渐变
 function TextGradient() {
@@ -235,6 +236,7 @@ function CssList() {
         <ImageInverted></ImageInverted>
         <Botton></Botton>
         <Image></Image>
+        <Text></Text>
       </div>
     </>
   );
