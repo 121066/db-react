@@ -3,3 +3,9 @@
     height: 100%;
     filter: drop-shadow(0 0 10px #fff);
 }
+.detail{
+    max-width: 100px;
+    height: 0;
+    background: red;
+    transition: .4s ease-in;
+}
