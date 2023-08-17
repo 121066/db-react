@@ -14,11 +14,16 @@ function Image() {
     });
   }, []);
   return (
-    <div className="image_list">
-      <div className="box">
-        <div className="image" draggable="true"></div>
+    <div>
+      <div>
+        <h2>图片拖动</h2>
+        <div className="image_list">
+          <div className="box">
+            <div className="image" draggable="true"></div>
+          </div>
+          <div className="box"></div>
+        </div>
       </div>
-      <div className="box"></div>
     </div>
   );
 }

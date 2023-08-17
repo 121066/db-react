@@ -1,0 +1,18 @@
+.pointer{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid red;
+    position: relative;
+}
+.pointer::after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 25px;
+    background: red;
+    left: -2px;
+    top: 20px;
+}

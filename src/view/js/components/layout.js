@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Cursor from "./Cursor";
 import Image from "./Image";
 import Text from "./Text";
 function LayoutJs() {
@@ -7,6 +8,7 @@ function LayoutJs() {
       <Button></Button>
       <Image></Image>
       <Text></Text>
+      <Cursor></Cursor>
     </div>
   );
 }
