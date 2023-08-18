@@ -11,6 +11,7 @@ function MenuItem() {
     { id: 2, key: "html", name: "html" },
     { id: 3, key: "js", name: "js" },
     { id: 4, key: "tab1", name: "tab1" },
+    { id: 5, key: "card", name: "card" },
   ];
   return (
     <>

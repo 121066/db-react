@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Card from "../../view/card";
 import Home from "../../view/home";
 import Html from "../../view/html";
 import Js from "../../view/js";
@@ -14,6 +15,7 @@ function Layout() {
           <Route element={<Html></Html>} path="/html/:id"></Route>
           <Route element={<Js></Js>} path="/js/:id"></Route>
           <Route element={<Tab1></Tab1>} path="/tab1/:id"></Route>
+          <Route element={<Card></Card>} path="/card/:id"></Route>
           {/* <Navigate element={<Html></Html>} path="/404" /> */}
         </Routes>
         {/* <Home></Home> */}
