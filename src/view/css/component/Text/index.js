@@ -20,6 +20,16 @@ function Text() {
           <span>家</span>
         </div>
       </div>
+      <div className="item">
+        <h2>奥运五环</h2>
+        <div className="olympic-rings">
+          <span className="ring"></span>
+          <span className="ring"></span>
+          <span className="ring"></span>
+          <span className="ring"></span>
+          <span className="ring"></span>
+        </div>
+      </div>
     </div>
   );
 }
