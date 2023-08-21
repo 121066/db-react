@@ -38,3 +38,18 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.card_item_top{
+    position: absolute;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: sandybrown;
+    padding-right: 3px;
+    border-bottom-right-radius: 20px;
+    left: 0;
+    top: 0;
+}

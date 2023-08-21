@@ -3,6 +3,7 @@ function CardItem() {
   return (
     <>
       <div className="card_item">
+        <div className="card_item_top">DEV</div>
         <div className="card_item_scuess"></div>
       </div>
     </>
