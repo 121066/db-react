@@ -36,6 +36,14 @@ function Botton() {
           明月几时有 把酒问青天 不知天上宫阙 今夕是何年
         </div>
       </div>
+      <div className="item">
+        <h2>锥形渐变</h2>
+        <div className="taper"></div>
+      </div>
+      <div className="item">
+        <h2>五彩圆圈</h2>
+        <div className="taper_list"></div>
+      </div>
     </div>
   );
 }
