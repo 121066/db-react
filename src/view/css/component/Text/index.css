@@ -76,3 +76,24 @@ background: radial-gradient(circle 40px at 255px, rgba(0, 0, 0, 0),
     border-color: #55ac58;
     margin-top: -50px;
 }
+.blending{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #000;
+    filter: contrast(30);
+}
+.text{
+    font-size: 100px;
+    color: #fff;
+    animation: showup 3s forwards infinite;
+}
+@keyframes showup{
+    from {
+        letter-spacing: -50px;
+        filter: blur(10px);
+    }
+    to{
+        letter-spacing: 10px;
+        filter: blur(2px);
+    }
+}

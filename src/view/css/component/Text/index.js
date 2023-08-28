@@ -30,6 +30,12 @@ function Text() {
           <span className="ring"></span>
         </div>
       </div>
+      <div className="item">
+        <h2>文字的交融展开</h2>
+        <div className="blending">
+          <span className="text">你好,前端开发工程师</span>
+        </div>
+      </div>
     </div>
   );
 }
