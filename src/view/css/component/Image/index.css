@@ -3,3 +3,28 @@
     height: 100%;
     filter: drop-shadow(0 0 10px #fff);
 }
+.avatar{
+    background: url('../../../../assets/image/006.jpg');
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.avatar::after, .avatar::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+.avatar::before{
+    background: rgba(0, 0, 0, 0.7);
+}
+.avatar::after{
+    background: inherit;
+    clip-path: circle(0% at 50% 50%);
+    transition: .5s;
+}
+.avatar:hover::after{
+    clip-path: circle(50% at 50% 50%);
+}

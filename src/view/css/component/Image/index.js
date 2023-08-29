@@ -9,6 +9,10 @@ function Image() {
           <img src={img} />
         </div>
       </div>
+      <div className="item">
+        <h2>圆形放大的hover效果</h2>
+        <div className="avatar"></div>
+      </div>
     </div>
   );
 }
