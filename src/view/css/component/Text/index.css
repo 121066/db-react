@@ -97,3 +97,12 @@ background: radial-gradient(circle 40px at 255px, rgba(0, 0, 0, 0),
         filter: blur(2px);
     }
 }
+.three_text{
+    font-size: 40px;
+    text-shadow: -1px 1px #bbb,
+    -2px 2px #bbb,
+    -3px 3px #bbb,
+    -4px 4px #bbb,
+    -10px 10px 3px #0008
+    ;
+}
