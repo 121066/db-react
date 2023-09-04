@@ -16,6 +16,11 @@ function ModelCard() {
           <span>春雷</span>
         </div>
       </div>
+      <div className="card_hover">
+        <div className="left"></div>
+        <div className="center"></div>
+        <div className="right"></div>
+      </div>
     </>
   );
 }

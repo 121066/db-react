@@ -65,3 +65,25 @@
     font-size: 1.8rem;
     transform: rotate(0deg);
 }
+.card_hover{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    transition: grid-template-columns .3s;
+    width: 200px;
+    height: 400px;
+}
+.card_hover .left,.center,.right{
+    /* width: 100%;
+    height: 100%; */
+    background:url('https: //dbyxs.xyz:8002/uploads/a96f5d440c47e68c71d0f8283e719a9b');
+}
+.card_hover:has(.left:hover){
+    grid-template-columns: 2fr .5fr .5fr;
+}
+.card_hover:has(.center:hover){
+grid-template-columns: .5fr 2fr .5fr;
+}
+.card_hover:has(.right:hover){
+grid-template-columns: .5fr .5fr 2fr;
+}
