@@ -70,13 +70,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
     transition: grid-template-columns .3s;
-    width: 200px;
+    width: 800px;
     height: 400px;
 }
 .card_hover .left,.center,.right{
-    /* width: 100%;
-    height: 100%; */
-    background:url('https: //dbyxs.xyz:8002/uploads/a96f5d440c47e68c71d0f8283e719a9b');
+    width: 100%;
+    height: 100%;
+   
 }
 .card_hover:has(.left:hover){
     grid-template-columns: 2fr .5fr .5fr;
@@ -86,4 +86,8 @@ grid-template-columns: .5fr 2fr .5fr;
 }
 .card_hover:has(.right:hover){
 grid-template-columns: .5fr .5fr 2fr;
+}
+.img{
+    width: 100%;
+    height: 100%;
 }

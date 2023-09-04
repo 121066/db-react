@@ -17,9 +17,24 @@ function ModelCard() {
         </div>
       </div>
       <div className="card_hover">
-        <div className="left"></div>
-        <div className="center"></div>
-        <div className="right"></div>
+        <div className="left">
+          <img
+            className="img"
+            src="https://dbyxs.xyz:8002/uploads/a96f5d440c47e68c71d0f8283e719a9b"
+          />
+        </div>
+        <div className="center">
+          <img
+            className="img"
+            src="https://dbyxs.xyz:8002/uploads/a96f5d440c47e68c71d0f8283e719a9b"
+          />
+        </div>
+        <div className="right">
+          <img
+            className="img"
+            src="https://dbyxs.xyz:8002/uploads/a96f5d440c47e68c71d0f8283e719a9b"
+          />
+        </div>
       </div>
     </>
   );
