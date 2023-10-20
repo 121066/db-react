@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button, Divider } from "antd";
 import { useCallback, useMemo, useState } from "react";
 import { useDemo } from "../../hooks/index";
 import LayoutJs from "./components/layout";
@@ -41,7 +41,9 @@ function Js() {
         减少
       </Button>
       <Button onClick={() => callback()}>callback</Button>
+      <Divider></Divider>
       <LayoutJs></LayoutJs>
+      <Divider></Divider>
     </>
   );
 }
