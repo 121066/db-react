@@ -53,3 +53,23 @@
     left: 0;
     top: 0;
 }
+@property --direc{
+    syntax:'<angle>';
+    initial-value:0deg;
+    inherits:false;
+}
+.card_bgc{
+    --direc:0deg;
+    width:100px;
+    height:200px;
+    color:red;
+    font-size:2rem;
+    background-image:linear-gradient(var(--direc),#5ddcff,#3c67e3,43%,#4e00c2);
+    animation:rotate 3s linear infinite;
+}
+@keyframes rotate{
+    to{
+        --direc:360deg;
+        /* background-image:linear-gradient(360deg,#5ddcff,#3c67e3,43%,#4e00c2); */
+    }
+}

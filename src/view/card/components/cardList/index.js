@@ -18,6 +18,7 @@ function CardList() {
           return <CardItem key={index}></CardItem>;
         })}
       </div>
+      <div className="card_bgc"></div>
     </>
   );
 }
